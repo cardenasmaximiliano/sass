@@ -1,0 +1,103 @@
+/**primero siempre se llama a todo lo que corresponde
+a utilities*/
+/**
+mixins nos permite generar bloques de codigo
+que pueden funcionar de manera estatica
+como dinamica
+
+*/
+/*segundo se llama a todo lo que corresponde 
+a base**/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif; }
+
+@font-face {
+  font-family: "pokemon";
+  src: url("../assets/fonts/Pokemon-Solid.ttf"); }
+
+@font-face {
+  font-family: "pikachuDos";
+  src: url("../assets/fonts/Pokemon-Hollow.ttf"); }
+
+/*tercero se llama al layout*/
+/*variables
+    definicion en programacion
+    es un espacio de memoria reservado,
+    que sirve para alojar un tipo de dato.
+*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black; }
+  .header img {
+    width: 6.25rem; }
+  .header nav {
+    padding-right: 1.25rem; }
+
+.main-index {
+  background-color: #cdf714; }
+
+.section-principal {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: none;
+  gap: 15px; }
+  .section-principal div {
+    width: 25rem; }
+    .section-principal div h1 {
+      color: black;
+      font-size: 3.125rem;
+      font-family: "pokemon"; }
+    .section-principal div p {
+      font-size: 1.5625rem;
+      color: pink;
+      font-family: "pokemonDos"; }
+
+/*cuarto se llaman a los componentes*/
+/*extend se usa como extension 
+de clases
+**/
+.boton-1, .boton-2, .boton-3 {
+  padding: 20px 35px;
+  border: none;
+  background-color: purple;
+  color: white;
+  border-radius: .3125rem; }
+  .boton-1:hover, .boton-2:hover, .boton-3:hover {
+    box-shadow: 1px 1px 5px #fec0ff; }
+
+.boton-2, .boton-3 {
+  background-color: red;
+  color: black; }
+
+.boton-3 {
+  padding: 10px 1.25rem; }
+  .boton-3:hover {
+    box-shadow: 2px 2px 5px #b03c3c; }
+
+.navbar {
+  display: flex;
+  gap: 1.25rem; }
+  .navbar li {
+    list-style: none; }
+    .navbar li a {
+      color: pink; }
+      .navbar li a:hover {
+        color: purple; }
+
+/*SIEMPRE AL FINAL SE LLAMA A LOS MEDIA
+
+SI ESTAMOS EN DESKTOP A MOBILE => DECRECIENTE
+SI ESTAMOS DE MOBILE A DESKTOP => CRECIENTE.
+**/

@@ -1,0 +1,22 @@
+.main-index{
+  
+    background-color: $colorPrincipal;
+}
+
+.section-principal{
+   @include flex(column,wrap,space-between,none,15px);
+    div{
+        width: 25rem;
+        h1{
+            color: $colorLetras;
+            font-size: 3.125rem;
+            font-family: "pokemon";
+        }
+        p{
+            font-size: 1.5625rem;
+            color: pink;
+            font-family: "pokemonDos";
+        }
+    }
+}
+

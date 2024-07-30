@@ -1,0 +1,26 @@
+/*extend se usa como extension 
+de clases
+**/
+
+.boton-1{
+    padding: 20px 35px;
+    border: none;
+    background-color: purple;
+    color: white;
+    border-radius: .3125rem;
+    &:hover{
+        box-shadow: 1px 1px 5px rgb(254, 192, 255);
+    }
+}
+.boton-2{
+    @extend .boton-1;
+    background-color: red;
+    color: black;
+}
+.boton-3{
+    @extend .boton-2;
+    padding: 10px 1.25rem;
+    &:hover{
+        box-shadow: 2px 2px 5px rgb(176, 60, 60);
+    }
+}

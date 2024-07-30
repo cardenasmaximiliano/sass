@@ -1,0 +1,23 @@
+/*variables
+    definicion en programacion
+    es un espacio de memoria reservado,
+    que sirve para alojar un tipo de dato.
+*/
+
+
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: map-get($colores, color1 );
+    img{
+
+        width: 6.25rem;
+    }
+    nav{
+        padding-right: 1.25rem;
+        
+    }
+}
